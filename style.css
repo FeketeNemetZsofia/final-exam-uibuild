@@ -1,0 +1,135 @@
+* {
+	padding: 0;
+	margin: 0;
+
+	box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Overpass', sans-serif;
+}
+
+#root{
+    background-color: #f8f7f3;
+}
+
+header{
+    padding: 10px;
+    text-transform: uppercase;
+    size: 100% * 40px;
+    max-height: 60px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    background-color: #1a24fb;
+    color: #f8f7f3;
+
+    display: flex;
+align-items: center;
+
+
+}
+
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	gap: 100px 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	padding: 20px;
+
+    max-width: 1280px;
+}
+
+.card{
+    border: 1px solid #1a24fb;
+    position: relative;
+    padding: 40px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+   
+
+	width: 100%;
+	max-width: 400px;
+    height: 500px;
+
+}
+
+.number{
+    size: 40px 40px;
+    position: absolute;
+    top: 5px;
+	right: 10px;
+
+    font-size: 24px;
+    font-family: 'Overpass';
+    color: #1a24fb;
+}
+
+.title{
+    font-size: 36px;
+    font-family: 'Overpass';
+    font-weight: 700;
+    color: #1a24fb;
+    max-width: 250px;
+
+    align-self: flex-start;
+  
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 80px;
+}
+
+.sub{
+  
+    font-size: 12px;
+    font-family: 'Overpass';
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #1a24fb;
+    letter-spacing: 0.2em;
+}
+
+.text{
+    margin-top: 20px;
+    font-size: 16px;
+    font-family: 'Overpass';
+    font-weight: 500;
+    height: 200px;
+
+    color: #1a24fb;
+
+}
+
+.readmore{
+    position: absolute;
+    bottom: -25px;
+	left: 0px;
+    size: 100% 18px;
+
+    font-size: 14px;
+    border: 0;
+    background-color: #f8f7f3;
+    color: #1a24fb;
+    text-align: left;
+
+}
+.readmore:hover{
+    color: #f8f7f3;
+    background-color: #1a24fb;
+    width: 100%;
+   
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .card {
+      max-width: 340px;
+      height: 500px;
+    }
+    .title{
+        height: 100px;
+    }
+}
